@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(216, 131, 131);
+        }
+        .box {
+          width: 100px;
+          height: 100px;
+          background: linear-gradient(90deg, rgb(15, 15, 14) 50%,  rgb(202, 205, 203) 100% );
+          margin: 10px;
+         
+        }
+        #contain {
+      display: flex;
+      align-items: center; 
+      flex-wrap: wrap;
+    }
+    #numBox{
+        width: 200px;
+    }
+    .ful{
+        color: white;
+    }
+      </style>
+      <label class="ful" for="numBox">введите число:</label>
+      <input type="number" id="numBox" min="1" max="100" value="0" placeholder="выберите число от 1 до 100" >
+      <button onclick="funTwo()">let's go</button>
+      <div id="contain"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
